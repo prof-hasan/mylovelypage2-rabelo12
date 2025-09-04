@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#principal {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+    background-color: rgb(165, 87, 42);
+    height: 100vh;
+    color: azure;
+    user-select: none;
+    font-family: "Luckiest Guy", cursive;
+    position: relative;
+    color: rgb(226, 158, 32);
+}
+aside {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex: 1;
+    background-color: rgb(87, 44, 20);
+    flex-direction: column;
+}
+aside img {
+    width: 60%;
+    height: 23%;
+    border-radius: 20px;
+    border: solid black 2px;
+    align-self: center;
+    background-color: rgb(141, 78, 6);
+}
+aside img:active {
+    transform: translateY(5px);
+}
+#macacos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 10rem 0;
+    align-items: center;
+    background-color: rgb(165, 87, 42);
+    border-left: solid black 10px;
+    flex: 3;
+}
+#macacos img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+#monkeys img {
+    display: none;
+}
+
+#monkeys #mico {
+    display: block;
+}
+
+#sla {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}
+
+#mostrar_dinheiro {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#rapaz {
+    display: block;
+}
+
+
+@keyframes subir {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+#click, #autoclick {
+    align-self: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vc {
+    opacity: 0;
+    font-size: 300%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    float: right;
+}
+
+
+@keyframes vc {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes back {
+    0% {background-color: rgba(94, 35, 12, 1);}
+    100% {background-color: rgb(165, 87, 42);}
+}
+
+
+#bana img{
+    position: absolute;
+    border: none;
+    top: -9%;
+    width: 10%;
+    height: auto;
+}
+
+@keyframes bananas {
+    0% {top: -12%;}
+    100% {top: 100%;}
+}
+
+@keyframes bananachataAparece {
+    from  { opacity: 0;}
+    to { opacity: 1;}
+}
+
+@keyframes bananachataDesaparece {
+    from  { opacity: 1;}
+    to { opacity: 0;}
+}
+
+#bana1 {
+        animation: bananas 4s linear infinite;
+        pointer-events: none;
+}
+#bana2 {
+        animation: bananas 5s linear infinite;
+        pointer-events: none;
+}
+#bana3 {
+        animation: bananas 8s linear infinite;
+        pointer-events: none;
+}
+#super {
+    padding: 40px;
+    opacity: 0;
+    pointer-events: none;
+    animation: bananachata 5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+#dinheiro {
+    text-align: center;
+}

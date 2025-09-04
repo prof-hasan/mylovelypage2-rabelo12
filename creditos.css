@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: rgb(12, 15, 41);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 32, 32);
+    padding: 20px 0px;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(212, 167, 42);
+    font-size: 2vh;
+}
+nav a:active {
+    color: rgb(180, 137, 18);
+}
+nav a:hover {
+    color: rgb(250, 209, 85);
+    transform: scale(1.1);
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+}
+
+ul {
+    font-size: 1.5rem;
+}
+
+ul strong {
+    color: rgb(212, 167, 42);
+}
+
+ul a {
+    color: rgb(12, 51, 122);
+}
+
+ul a:hover {
+    color: rgb(56, 82, 131);
+}
+
+main {
+    position: relative;
+    color: antiquewhite;
+    margin: 0 10vw;
+    font-family: "Luckiest Guy", cursive;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(34, 32, 32);
+    height: 10vh;
+    margin-top: 3vh;
+    color: rgb(212, 167, 42);
+    box-shadow: -5px 0px 15px rgb(184, 186, 206);
+    border-top: solid 1px black;
+}
+
+footer h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    background-color: rgb(34, 32, 32);
+}
+
+footer a {
+    color: rgb(12, 51, 122);
+    text-decoration: none;
+    text-align: center;
+}
+
+footer a:hover {
+    color: rgb(56, 82, 131);
+}
+
+p {
+    text-align: center;
+}
